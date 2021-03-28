@@ -5,7 +5,7 @@ function Navbar() {
         <img className="mr-5 w-12 h-auto" src="/images/logo.png" />
         <a href="/sign-in">SIGN-IN</a>
       </div>
-      <div className="flex w-full max-w-2xl justify-between">
+      <div className="flex w-full max-w-lg justify-between">
         <a href="/">HOME</a>
         <a href="/appliances">APPLIANCES</a>
         <a href="/content">CONTENT</a>
