@@ -31,7 +31,7 @@ function Navbar() {
         }
         className="hidden sm-tab:block"
       >
-        <button className="p-4">
+        <button className="p-4 hidden sm-tab:block">
           <MenuIcon />
         </button>
       </Popover>
