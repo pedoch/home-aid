@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import React from 'react';
-import Footer from '../components/common/footer';
-import Navbar from '../components/common/navbar';
+import Head from "next/head";
+import React from "react";
+import Footer from "../components/common/footer";
+import Navbar from "../components/common/navbar";
 
 const Home = () => (
   <div className="w-full min-h-screen flex flex-col px-2 overflow-x-hidden">
@@ -9,11 +9,11 @@ const Home = () => (
       <title>Home</title>
     </Head>
     <Navbar />
-    <div className="w-full min-h-full grid grid-cols-2 space-x-5 mx-10 pt-20">
-      <div className="col-span-1">
+    <div className="w-full min-h-full grid grid-cols-2 space-x-2 px-10 pt-20 lg-tab:grid-cols-1 lg-tab:px-2 sm-tab:pt-5">
+      <div className="col-span-1 w-full flex flex-col justify-center">
         <div
-          className="w-full max-w-2xl flex items-center p-5 rounded-xl text-white mb-5 shadow-lg"
-          style={{ backgroundColor: '#1074CF' }}
+          className="w-full max-w-2xl flex items-center p-5 rounded-xl text-white mb-5 shadow-lg lg-tab:mx-auto"
+          style={{ backgroundColor: "#1074CF" }}
         >
           <div className="w-full">
             <p className="text-3xl">Active Areas</p>
@@ -22,22 +22,25 @@ const Home = () => (
               <li>Master Bedroom: A/C</li>
             </ul>
           </div>
-          <img src="/images/couch.png" />
+          <img src="/images/couch.png" className="phone:hidden" />
         </div>
-        <div className="w-full max-w-2xl grid grid-cols-2 space-x-5 text-white mb-5">
+        <div className="w-full max-w-2xl grid grid-cols-2 space-x-5 text-white mb-5 lg-tab:mx-auto phone:grid-cols-1 phone:space-x-0 phone:space-y-5">
           <div className="col-span-1 flex bg-black p-5 rounded-xl relative">
             <div className="">
-              <p className="text-3xl">Active Areas</p>
+              <p className="text-3xl">Lights</p>
               <ul className="list-disc text-xl ml-5">
-                <li>Living Room: Lights</li>
-                <li>Master Bedroom: A/C</li>
+                <li>Living Room: ON</li>
+                <li>Stacy's Room: ON</li>
               </ul>
             </div>
-            <img src="/images/lightbulb.png" className="absolute right-5" />
+            <img
+              src="/images/lightbulb.png"
+              className="absolute right-5 sm-tab:hidden"
+            />
           </div>
           <div
             className="col-span-1 flex p-5 rounded-xl relative"
-            style={{ backgroundColor: '#BA841D' }}
+            style={{ backgroundColor: "#BA841D" }}
           >
             <div className="">
               <p className="text-3xl">Appliances</p>
@@ -46,12 +49,15 @@ const Home = () => (
                 <li>Heater: Stacy’s Room</li>
               </ul>
             </div>
-            <img src="/images/washing_machine.png" className="absolute right-5" />
+            <img
+              src="/images/washing_machine.png"
+              className="absolute right-5 sm-tab:hidden"
+            />
           </div>
         </div>
         <div
-          className="w-full max-w-2xl flex items-center p-5 rounded-xl text-white mb-5 shadow-lg"
-          style={{ backgroundColor: '#75A636' }}
+          className="w-full max-w-2xl flex items-center p-5 rounded-xl text-white mb-5 shadow-lg lg-tab:mx-auto"
+          style={{ backgroundColor: "#75A636" }}
         >
           <div className="w-full">
             <p className="text-3xl">Sensors</p>
@@ -61,10 +67,13 @@ const Home = () => (
               <li>Cameras: Enabled</li>
             </ul>
           </div>
-          <img src="/images/sensor.png" />
+          <img src="/images/sensor.png" className="phone:hidden" />
         </div>
       </div>
-      <img src="/images/electricity_rate.png" className="col-span-1" />
+      <img
+        src="/images/electricity_rate.png"
+        className="col-span-1 lg-tab:hidden"
+      />
     </div>
     <Footer />
   </div>
