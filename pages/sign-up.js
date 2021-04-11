@@ -9,7 +9,7 @@ function SignUp() {
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <Head>
-        <title>Home</title>
+        <title>Sign Up</title>
       </Head>
       {/* <Navbar /> */}
       <img src="/images/circuit1.png" className="absolute tab:hidden" />

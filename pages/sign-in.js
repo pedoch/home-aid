@@ -8,7 +8,7 @@ function SignIn() {
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <Head>
-        <title>Home</title>
+        <title>Sign In</title>
       </Head>
       {/* <Navbar /> */}
       <img src="/images/circuit1.png" className="absolute tab:hidden" />
