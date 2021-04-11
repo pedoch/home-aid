@@ -44,7 +44,12 @@ const ActiveAreas = () => {
           </div>
           <div className="w-full text-xl font-semibold flex justify-between mb-6 mt-5">
             <span className="text-blue-500 flex items-center">
-              ADD AREAS <img src="/images/add_area.png" className="ml-16" />
+              ADD AREAS{" "}
+              <img
+                src="/images/add_area.png"
+                className="ml-16 cursor-pointer"
+                onClick={() => router.push("/add-device")}
+              />
             </span>
           </div>
         </div>
