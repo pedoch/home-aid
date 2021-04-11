@@ -9,7 +9,7 @@ function Navbar() {
       </div>
       <div className="flex w-full max-w-lg justify-between sm-tab:hidden">
         <a href="/">HOME</a>
-        <a href="/appliances">APPLIANCES</a>
+        <a href="/active-areas">APPLIANCES</a>
         <a href="/content">CONTENT</a>
       </div>
       <Popover
