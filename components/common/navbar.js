@@ -21,7 +21,7 @@ function Navbar() {
                 <a href="/">HOME</a>
               </Menu.Item>
               <Menu.Item>
-                <a href="/appliances">APPLIANCES</a>
+                <a href="/active-areas">APPLIANCES</a>
               </Menu.Item>
               <Menu.Item>
                 <a href="/content">CONTENT</a>

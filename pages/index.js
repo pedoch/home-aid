@@ -45,6 +45,7 @@ const Home = () => {
             <div
               className="col-span-1 flex p-5 rounded-xl relative"
               style={{ backgroundColor: "#BA841D" }}
+              onClick={() => router.push("/active-areas")}
             >
               <div className="">
                 <p className="text-3xl">Appliances</p>
