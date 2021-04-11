@@ -2,7 +2,7 @@ import Navbar from "../components/common/navbar";
 import Footer from "../components/common/footer";
 import Head from "next/head";
 
-function SignIn() {
+function SignUp() {
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <Head>
@@ -19,12 +19,23 @@ function SignIn() {
         src="/images/circuit2.png"
         className="absolute right-0 top-3/4 tab:hidden"
       />
-      <div className="w-full min-h-full flex flex-col pt-20 absolute px-2 tab:relative">
+      <div className="w-full min-h-full flex flex-col pt-20 absolute px-2 text-center tab:mb-10 tab:relative">
         <img src="/images/logo.png" className="mx-auto" />
         <span className="mx-auto text-4xl my-10 font-semibold text-blue-500">
-          LOG IN
+          SIGN UP
         </span>
         <form className="w-full max-w-3xl flex flex-col items-center mx-auto tab:max-w-xl">
+          <input
+            className="p-4 rounded w-full border border-black mb-5"
+            placeholder="Name:"
+            required
+          />
+          <input
+            className="p-4 rounded w-full border border-black mb-5"
+            placeholder="Phone:"
+            type="tel"
+            required
+          />
           <input
             className="p-4 rounded w-full border border-black mb-5"
             placeholder="E-Mail:"
@@ -33,7 +44,19 @@ function SignIn() {
           />
           <input
             className="p-4 rounded w-full border border-black mb-5"
+            placeholder="Address:"
+            type="text"
+            required
+          />
+          <input
+            className="p-4 rounded w-full border border-black mb-5"
             placeholder="Password:"
+            type="password"
+            required
+          />
+          <input
+            className="p-4 rounded w-full border border-black mb-5"
+            placeholder="Confirm Password:"
             type="password"
             required
           />
@@ -41,20 +64,23 @@ function SignIn() {
             className="bg-blue-500 p-4 rounded w-80 text-white phone:w-full"
             type="submit"
           >
-            Login
+            SIGN UP
           </button>
         </form>
         <span className="mx-auto mt-2">
-          Don't have an account?{" "}
-          <a href="/sign-up" className="text-blue-500 font-bold">
-            Sign-Up
+          Already have an account?{" "}
+          <a href="/sign-in" className="text-blue-500 font-bold">
+            Sign-In
           </a>
         </span>
-        <img src="/images/log_in.png" className="mx-auto mt-10 phone:hidden" />
+        <img
+          src="/images/sign_up.png"
+          className="mx-auto my-10 mb-32 phone:hidden"
+        />
       </div>
       <Footer />
     </div>
   );
 }
 
-export default SignIn;
+export default SignUp;
