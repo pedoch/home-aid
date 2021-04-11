@@ -7,6 +7,9 @@ module.exports = {
         phone: { max: "640px" },
         // => @media (max-width: 640px) { ... }
 
+        "sm-tab": { max: "540px" },
+        // => @media (max-width: 540px) { ... }
+
         tab: { max: "768px" },
         // => @media (max-width: 768px) { ... }
 
