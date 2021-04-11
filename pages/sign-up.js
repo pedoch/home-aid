@@ -1,8 +1,11 @@
 import Navbar from "../components/common/navbar";
 import Footer from "../components/common/footer";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 function SignUp() {
+  const router = useRouter();
+
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <Head>
@@ -24,7 +27,13 @@ function SignUp() {
         <span className="mx-auto text-4xl my-10 font-semibold text-blue-500">
           SIGN UP
         </span>
-        <form className="w-full max-w-3xl flex flex-col items-center mx-auto tab:max-w-xl">
+        <form
+          className="w-full max-w-3xl flex flex-col items-center mx-auto tab:max-w-xl"
+          onSubmit={(e) => {
+            e.preventDefault();
+            router.push("/sign-in");
+          }}
+        >
           <input
             className="p-4 rounded w-full border border-black mb-5"
             placeholder="Name:"
