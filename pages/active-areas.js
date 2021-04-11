@@ -19,7 +19,10 @@ const ActiveAreas = () => {
             <span>Status</span>
           </div>
           <hr className="bg-blue-500 border-0 h-1 w-full max-w-xs mb-5" />
-          <div className="w-full text-xl font-semibold flex justify-between mb-6">
+          <div
+            className="w-full text-xl font-semibold flex justify-between mb-6 cursor-pointer"
+            onClick={() => router.push("/risk-management")}
+          >
             <span>Living Room</span>
             <span className="text-green-500">Active</span>
           </div>

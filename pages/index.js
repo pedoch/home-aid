@@ -15,7 +15,7 @@ const Home = () => {
       <div className="w-full min-h-full grid grid-cols-2 space-x-2 px-10 pt-20 lg-tab:grid-cols-1 lg-tab:px-2 sm-tab:pt-5">
         <div className="col-span-1 w-full flex flex-col justify-center">
           <div
-            className="w-full max-w-2xl flex items-center p-5 rounded-xl text-white mb-5 shadow-lg lg-tab:mx-auto"
+            className="w-full max-w-2xl flex items-center p-5 rounded-xl text-white mb-5 shadow-lg cursor-pointer lg-tab:mx-auto"
             style={{ backgroundColor: "#1074CF" }}
             onClick={() => router.push("/active-areas")}
           >
@@ -43,7 +43,7 @@ const Home = () => {
               />
             </div>
             <div
-              className="col-span-1 flex p-5 rounded-xl relative"
+              className="col-span-1 flex p-5 rounded-xl relative cursor-pointer"
               style={{ backgroundColor: "#BA841D" }}
               onClick={() => router.push("/active-areas")}
             >
