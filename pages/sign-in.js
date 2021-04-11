@@ -44,6 +44,12 @@ function SignIn() {
             Login
           </button>
         </form>
+        <span className="mx-auto mt-2">
+          Don't have an account?{" "}
+          <a href="/sign-up" className="text-blue-500 font-bold">
+            Sign-Up
+          </a>
+        </span>
         <img src="/images/log_in.png" className="mx-auto mt-10 phone:hidden" />
       </div>
       <Footer />
